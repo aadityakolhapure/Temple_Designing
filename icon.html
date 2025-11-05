@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #0c2b4e;
+        margin: 0;
+        height: 100vh;
+      }
+      .container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+      }
+      .w,
+      .r,
+      .g {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .w::before,
+      .w::after {
+        content: "";
+        position: absolute;
+        height: 250px;
+        width: 600px;
+        border: 10px solid white;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+      .r::before,
+      .r::after {
+        content: "";
+        position: absolute;
+        height: 250px;
+        width: 600px;
+        border: 10px solid red;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+      .g::before,
+      .g::after {
+        content: "";
+        position: absolute;
+        height: 250px;
+        width: 600px;
+        border: 10px solid green;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+      .circle {
+        width: 100px;
+        position: absolute;
+        height: 100px;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        background-color: #73c8d2;
+
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="w"></div>
+      <div class="r"></div>
+      <div class="g"></div>
+      <div class="circle"></div>
+    </div>
+  </body>
+</html>

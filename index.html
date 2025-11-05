@@ -1,0 +1,223 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        width: 100%;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        background-color: #0c2b4e;
+        flex-wrap: wrap;
+      }
+      nav span {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      nav .menu {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        align-items: center;
+        color: azure;
+      }
+      nav .menu button {
+        padding: 10px 20px;
+        background-color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        width: 100%;
+        background-color: #f4f4f4;
+
+        flex-wrap: wrap;
+        height: fit-content;
+        background-color: aliceblue;
+        flex-wrap: wrap-reverse;
+      }
+
+      @media (max-width: 768px) {
+        .hero img {
+          height: 150px;
+        }
+        .hero #1 h1 {
+          font-size: 20px;
+        }
+      }
+      #1 {
+        flex: 1;
+        min-width: 300px;
+        margin-left: 100px;
+      }
+
+      .feature {
+        padding: 50px;
+        background-color: #e2e8f0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+      }
+
+      .feature-box {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .feature-box card {
+        background-color: white;
+        padding: 20px;
+
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 200px;
+      }
+
+      input {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+        margin: 10px;
+      }
+
+      textarea {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+        margin: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo"><span>DEV SPACE</span></div>
+      <div class="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <button>Login</button>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div id="1" style="text-align: left">
+        <h1 style="font-size: 50px">Welcome to Dev Space</h1>
+        <p style="font-size: larger">Your gateway to coding excellence.</p>
+        <button
+          style="
+            background-color: #0c2b4e;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: large;
+          ">
+          Get Started
+        </button>
+      </div>
+      <div>
+        <img
+          src="https://t3.ftcdn.net/jpg/05/75/74/42/360_F_575744213_xDU4dVUMXMJOERoAOofBUNoIIbzJXxYU.jpg"
+          alt="Hero Image" />
+      </div>
+    </section>
+
+    <section class="feature">
+      <div>
+        <h1 style="text-align: center; font-size: 40px">Features</h1>
+      </div>
+      <div class="feature-box">
+        <card>
+          <h2>Feature 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+            minus!
+          </p>
+        </card>
+        <card>
+          <h2>Feature 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+            minus!
+          </p>
+        </card>
+        <card>
+          <h2>Feature 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+            minus!
+          </p>
+        </card>
+      </div>
+    </section>
+
+    <section class="contact" style="width: 50%">
+      <div>
+        <h1 style="text-align: center; font-size: 40px">Contact Us</h1>
+      </div>
+      <div style="text-align: center; margin-top: 20px">
+        <form action="#">
+          <input type="text" placeholder="Your Name" /><br />
+          <input type="email" placeholder="Your Email" /><br />
+          <textarea placeholder="Your Message"></textarea><br />
+          <button
+            type="submit"
+            style="
+              background-color: #0c2b4e;
+              color: white;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              font-size: large;
+            ">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer style="width: 100%">
+      <div
+        style="
+          background-color: #0c2b4e;
+          color: white;
+          text-align: center;
+          padding: 20px;
+          margin-top: 20px;
+        ">
+        &copy; 2024 Dev Space. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
